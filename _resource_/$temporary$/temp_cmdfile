@@ -1,0 +1,23 @@
+﻿-P
+"E:\88_TEST\01_PROJECT\sample_nexacroplatform_N_windows_deploy\sample_Nexacro_N_windows_deploy.xprj"
+-O
+"C:\Users\tobesoft\Documents\TOBESOFT\Nexacro N\outputs\sample_Nexacro_N_windows_deploy"
+-B
+"C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\"
+-JSVERSION
+"ECMAScript 2015(ES6)"
+-BOOTSTRAP
+-MODULE
+-BROWSER
+NRE,Internet Explorer 11,Internet Explorer 10,Chrome,Safari,
+-D1
+"C:\Users\tobesoft\Documents\TOBESOFT\Nexacro N\deploy\sample_Nexacro_N_windows_deploy\_windows_"
+-DB1
+"C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\"
+-DT1
+4369
+-IGNORECOMPRESS
+"E:\88_TEST\01_PROJECT\sample_nexacroplatform_N_windows_deploy\.ignorecompress"
+-RTL
+-Q
+918224

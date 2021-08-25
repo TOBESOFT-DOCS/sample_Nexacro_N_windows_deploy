@@ -40,7 +40,7 @@ this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 	{
 		if(xhr.readyState === 4) {
 			if(xhr.status==0) {
-				that.FileDownTransfer00.download(window.location.protocol + "//" + window.location.host + "/deploy_guide/windows/Service/TPLSvc_Setup.exe");
+				that.FileDownTransfer00.download(window.location.protocol + "//" + window.location.host + "/Service/TPLSvc_Setup.exe");
 			}
 			else
 			{
@@ -89,7 +89,7 @@ this.Button01_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 		return false;
 	}
 	objNexacro.action = "method";            
-	objNexacro.value = { "getengineversion": { "param": ["{DB2D4086-A192-4FCB-A24D-77A7373B02AA}"], "result": null } };
+	objNexacro.value = { "getengineversion": { "param": ["{3E221E7D-2ECF-4EF4-AD16-C69972112C86}"], "result": null } };
 	
 	xhr = new XMLHttpRequest();
 	xhr.reqType = 1;	
@@ -97,13 +97,13 @@ this.Button01_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 	{
 		if(xhr.readyState === 4) {
 			var resultJson = JSON.parse(xhr.responseText);
-			var reg = new RegExp("17.0.0.2000", "i");
+			var reg = new RegExp("21.0.0.100", "i");
 			var rtnEngineVer = resultJson.value["getengineversion"].result;
 			that.fn_addvalue("nexacro engine version: "+rtnEngineVer);			
 			var strEgine = reg.test(rtnEngineVer);
 			if(!strEgine)
 			{
-				that.FileDownTransfer00.download(window.location.protocol + "//" + window.location.host + "/deploy_guide/windows/Service/nexacro17_SetupRuntime_x64.exe");
+				that.FileDownTransfer00.download(window.location.protocol + "//" + window.location.host + "/Service/NexacroN_SetupRuntime_x64.exe");
 			}
 		}
 	}	
@@ -120,10 +120,10 @@ this.Button02_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 	objNexacro.action = 'setproperty';
 	objNexacro.value = {
 		"key": "TEST",
-        "bjson": window.location.protocol + "//" + window.location.host+"/deploy_guide/windows/_windows_/start.json",
+        "bjson": window.location.protocol + "//" + window.location.host+"/_windows_/start.json",
 		"screenid": "windows_sub_screen",
 		"globalvalue": "gvTest:av="+this.Edit00.text,
-		"enginesetupkey": "{DB2D4086-A192-4FCB-A24D-77A7373B02AA}"
+		"enginesetupkey": "{3E221E7D-2ECF-4EF4-AD16-C69972112C86}"
 	};
 	this.sendData();
 };
@@ -146,7 +146,7 @@ this.Button04_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 	objNexacro.action = 'method';
 	// objNexacro.value = { "isexistshortcut": { "param": ["test", "desktop", true] } };
 	// https://icon-icons.com/ko/download/102320/ICO/512/
-	objNexacro.value = { "makeshortcut": { "param": ["test", window.location.protocol + "//" + window.location.host+"/deploy_guide/windows/_windows_/_resource_/_images_/sample_test.ico", "%USERAPP%", "desktop", true] } };
+	objNexacro.value = { "makeshortcut": { "param": ["test", window.location.protocol + "//" + window.location.host+"/_windows_/_resource_/_images_/sample_test.ico", "%USERAPP%", "desktop", true] } };
 	this.sendData();
 };
 
@@ -166,7 +166,7 @@ this.Button06_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 	objNexacro.action = 'setproperty';
 	objNexacro.value = {
 		"key": "TEST",
-        "bjson": window.location.protocol + "//" + window.location.host+"/deploy_guide/windows/_dummy_/start.json",
+        "bjson": window.location.protocol + "//" + window.location.host+"/_dummy_/start.json",
 		"screenid": "windows_sub_screen",
 		"enginesetupkey": "{DF766894-E778-4A2A-A585-13F9BD8DE053}",
 		"setupresource": 'true'
@@ -179,7 +179,7 @@ this.Button07_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
 	this.fn_addvalue("(8) Button Click");
 	objNexacro.action = 'method';
-	objNexacro.value = { "downloadresource": { "param": [window.location.protocol + "//" + window.location.host+"/deploy_guide/windows/_dummy_/"] } };
+	objNexacro.value = { "downloadresource": { "param": [window.location.protocol + "//" + window.location.host+"/_dummy_/"] } };
 	this.sendData();	
 };
 
@@ -187,7 +187,7 @@ this.Button07_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 this.Button08_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
 	this.fn_addvalue("(9) Button Click");
-	that.FileDownTransfer00.download(window.location.protocol + "//" + window.location.host + "/deploy_guide/windows/_dummy_/dummy_Setup.exe");
+	that.FileDownTransfer00.download(window.location.protocol + "//" + window.location.host + "/_dummy_/dummy_Setup.exe");
 };
 
 
