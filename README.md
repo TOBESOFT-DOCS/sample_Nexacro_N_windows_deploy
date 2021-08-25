@@ -1,6 +1,6 @@
 # 넥사크로 N 윈도우 앱 배포 예제 프로젝트
 
-![Product Version](https://img.shields.io/badge/nexacro%20platform-v17.0.0.2000-blue.svg)
+![Product Version](https://img.shields.io/badge/Nexacro-v21.0.0.100-blue.svg)
 
 넥사크로 N 배포 가이드 문서 내 포함된 예제 프로젝트 저장소입니다.
 
