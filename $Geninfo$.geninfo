@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <GenInfo version="1.1">
+    <Rule>
+      <ENV rule_version="1.05"/>
+      <ADL rule_version="1.14"/>
+      <FDL rule_version="1.04"/>
+      <XCSS rule_version="1.04"/>
+      <Script rule_version="1.02"/>
+    </Rule>
+    <Info project="E:\88_TEST\01_PROJECT\sample_nexacroplatform_N_windows_deploy\" generated="C:\Users\tobesoft\Documents\TOBESOFT\Nexacro N\outputs\sample_nexacroplatform_N_windows_deploy\"><File url="environment.xml" checksum="20210825111310" errormsg=""/><File url="typedefinition.xml" checksum="20210825105119" errormsg=""/><File url="appvariables.xml" checksum="20210825105119" errormsg=""/><File url="_resource_\_theme_\windows\theme.xcss" checksum="20210825105119" errormsg=""/><File url="_resource_\_theme_\default\theme.xcss" checksum="20210825105118" errormsg=""/><File url="_resource_\_xcss_\TEST.xcss" checksum="20210825105119" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\framework\Framework.json" checksum="20210823205120" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\resources\Resource.json" checksum="20210823205120" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\CompBase.json" checksum="20210823205114" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\ComComp.json" checksum="20210823205114" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\Grid.json" checksum="20210823205116" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\ListView.json" checksum="20210823205120" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\DeviceAPI.json" checksum="20210823205114" errormsg=""/><File url="_resource_\_theme_\blue\theme.xcss" checksum="20210825110443" errormsg=""/><File url="_resource_\_theme_\blue\" checksum="" errormsg=""/><File url="_resource_\_theme_\grey\theme.xcss" checksum="20210825110501" errormsg=""/><File url="_resource_\_theme_\grey\" checksum="" errormsg=""/><File url="App_Launcher_TEST.xadl" checksum="20210825105116" errormsg=""/><File url="App_Windows_DEMO.xadl" checksum="20210825105116" errormsg=""/><File url="FrameBase\Form_Launcher_TEST.xfdl" checksum="20210825113328" errormsg=""/><File url="FrameBase\Form_Windows_DEMO.xfdl" checksum="20210825113352" errormsg=""/></Info>
+  </GenInfo>
+</root>
