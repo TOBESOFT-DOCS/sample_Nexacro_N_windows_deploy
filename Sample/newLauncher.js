@@ -16,14 +16,12 @@
       } else {
         var SetupRuntimeName = "";
     		var userAgent = navigator.userAgent;
-    		if(userAgent.indexOf("Windows NT 5.1") != -1 
-    			|| userAgent.indexOf("Windows XP") != -1){
-    			SetupRuntimeName = "nexacro17_SetupRuntime_XP.exe";
-    			//strEnginesetupkey = "{DFC74642-2DFB-455B-879D-A097E4B97C9E}";
-    		}else{ 
-    			SetupRuntimeName = "nexacro17_SetupRuntime_x86.exe";
-    			//strEnginesetupkey = "{DFC74642-2DFB-455B-879D-A097E4B97C9E}";
-    		}
+			if(userAgent.indexOf("WOW64") != -1 
+				|| userAgent.indexOf("Win64") != -1)
+				SetupRuntimeName += "NexacroN_SetupRuntime_x64.exe";
+			else 
+				SetupRuntimeName += "NexacroN_SetupRuntime_x32.exe";
+
     		var downURL = strServerPath + strDownloadPath + "/" + SetupRuntimeName;
     		
     		var divCon = document.getElementById("linkEngine")
